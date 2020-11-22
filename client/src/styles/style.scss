@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+// Import global base styles and resets
+@import 'base/all';
+
+//  Import component styles
+@import 'components/all';
+
+//  Import page styles
+@import 'pages/all';
+
+//  Import utilities and helper classes
+@import 'utils/all';

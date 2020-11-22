@@ -1,0 +1,38 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &--primary {
+    height: 5.6rem;
+    padding: 0 3.6rem;
+    color: $white;
+    background-color: $blue;
+    line-height: 1.1;
+    font-size: 1.6rem;
+    letter-spacing: 0.12em;
+    font-weight: bold;
+    border-radius: $radius;
+    transition: background-color $trans;
+
+    @include desktop {
+      &:hover {
+        background-color: darken($blue, 7%);
+      }
+    }
+  }
+
+  &--icon {
+    font-size: 0;
+    @include desktop {
+      &:hover {
+        .icon--ice {
+          fill: lighten($blue, 15%);
+        }
+      }
+    }
+  }
+}

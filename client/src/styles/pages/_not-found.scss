@@ -1,0 +1,16 @@
+.not-found {
+  display: block;
+  width: 100%;
+  max-width: 50rem;
+  text-align: center;
+  margin-top: 4rem;
+
+  &__sub-heading {
+    color: $black-light;
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,35 @@
+.table {
+  width: 100%;
+  font-size: 1.4rem;
+  color: $black;
+  user-select: none;
+
+  &__sort-btns {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 1.2rem;
+  }
+
+  thead {
+    background-color: $black-light;
+    border: 1px solid $black-light;
+    color: $ice;
+  }
+
+  td,
+  th {
+    padding: 1.6rem;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  tbody {
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
+    tr {
+      border-bottom: 1px solid $border;
+    }
+  }
+}

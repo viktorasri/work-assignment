@@ -1,0 +1,12 @@
+.login {
+  width: 100%;
+  max-width: 50rem;
+  padding: 4rem 3rem;
+  border-radius: $radius;
+  background-color: $white;
+  border: 1px solid $gray;
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+}

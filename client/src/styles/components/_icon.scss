@@ -1,0 +1,15 @@
+.icon {
+  display: inline-block;
+  height: 1.6rem;
+  width: 1.6rem;
+  display: inline-block;
+  transition: fill $trans, stroke $trans;
+  stroke: $black;
+  fill: $black;
+  user-select: none;
+
+  &--ice {
+    fill: $ice;
+    stroke: $ice;
+  }
+}

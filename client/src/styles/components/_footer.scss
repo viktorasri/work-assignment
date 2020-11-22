@@ -1,0 +1,13 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: $black-light;
+  box-shadow: 0 0 4rem 1rem rgba($gray-dark, 0.5) rgba($black-light, 0.5);
+
+  &__inner {
+    text-align: center;
+    color: $ice;
+  }
+}
