@@ -3,14 +3,13 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import { userLoginReducer } from './reducers/userReducers';
+import { serversListReducer } from './reducers/serversReducer';
 
 //  App reducers
 const reducer = combineReducers({
   userLogin: userLoginReducer,
+  serversList: serversListReducer,
 });
-
-//  Redux middlewares
-const middleware = [thunk];
 
 //  Check if user login info is saved in localstorage
 const userLoginFromStorage = localStorage.getItem('userLogin') ? JSON.parse(localStorage.getItem('userLogin')) : {};
@@ -19,6 +18,9 @@ const userLoginFromStorage = localStorage.getItem('userLogin') ? JSON.parse(loca
 const INITIAL_STATE = {
   userLogin: userLoginFromStorage,
 };
+
+//  Redux middlewares
+const middleware = [thunk];
 
 //  Setup redux dev tools for development mode
 const enhancer =

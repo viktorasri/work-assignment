@@ -53,7 +53,7 @@ const Login = ({ history }) => {
             />
 
             <div className='form__control d-flex justify-center'>
-              <Button variant='primary' type='submit'>
+              <Button variant='primary' type='submit' disabled={loading}>
                 Login
               </Button>
             </div>
