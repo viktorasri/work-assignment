@@ -6,7 +6,7 @@ import Button from '../components/Button';
 
 const NotFound = () => {
   return (
-    <Page>
+    <Page title='404 Not Found'>
       <div className='row'>
         <div className='not-found block-center text-center'>
           <div className='not-found__sub-heading'>

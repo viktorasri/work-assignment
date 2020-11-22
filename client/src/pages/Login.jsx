@@ -27,7 +27,7 @@ const Login = ({ history }) => {
   };
 
   return (
-    <Page>
+    <Page title='Login'>
       <div className='row'>
         <div className='login block-center'>
           {loading && <Spinner />}
