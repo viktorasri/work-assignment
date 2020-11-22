@@ -11,7 +11,7 @@ const Button = ({ children, variant, ...props }) => {
 
 Button.propTypes = {
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired,
-  variant: PropTypes.oneOf(['primary', 'icon']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'icon']),
 };
 
 export default Button;

@@ -25,6 +25,11 @@
     }
   }
 
+  &--secondary {
+    @extend .button--primary;
+    height: 4rem;
+  }
+
   &--icon {
     font-size: 0;
     @include desktop {

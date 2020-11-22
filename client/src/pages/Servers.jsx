@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 import { ReactComponent as SortAsc } from '../assets/sort-asc.svg';
 import { ReactComponent as SortDeasc } from '../assets/sort-deasc.svg';
 import Page from '../components/Page';
 import Button from '../components/Button';
 
-const Servers = () => {
+const Servers = ({ history }) => {
+  const userLogin = useSelector((state) => state.userLogin);
+  const { error: errorLogin, success: successLogin } = userLogin;
+
+  useEffect(() => {
+    if (!successLogin) {
+      history.push('/login');
+    }
+  }, [successLogin, history]);
+
   return (
     <Page>
       <div className='servers'>

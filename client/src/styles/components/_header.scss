@@ -7,6 +7,11 @@
   padding: 2rem 0;
   box-shadow: 0 0 4rem 1rem rgba($gray-dark, 0.5);
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__logo {
     height: 4rem;
   }
