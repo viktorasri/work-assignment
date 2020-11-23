@@ -13,7 +13,7 @@ const Servers = ({ history }) => {
   const dispatch = useDispatch();
 
   const userLogin = useSelector((state) => state.userLogin);
-  const { error: errorLogin, success: successLogin } = userLogin;
+  const { success: successLogin } = userLogin;
 
   const serversList = useSelector((state) => state.serversList);
   const { error, loading, servers } = serversList;
