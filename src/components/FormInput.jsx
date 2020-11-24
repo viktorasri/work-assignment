@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 const FormInput = (props) => {
   return (
     <div className='form__control'>
-      {/* <input className='form__input' onChange={onChange} type={type} placeholder={placeholder} {...otherProps} /> */}
       <input className='form__input' {...props} />
     </div>
   );

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Page /> expect to render component 1`] = `
+<Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Server Explorer
+    </title>
+    <meta
+      content="Server explorer web app"
+      name="description"
+    />
+  </HelmetWrapper>
+  <main
+    className="page"
+  />
+</Fragment>
+`;
+
+exports[`<Page /> renders page with passed title prop 1`] = `
+<Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      home | Server Explorer
+    </title>
+    <meta
+      content="Server explorer web app"
+      name="description"
+    />
+  </HelmetWrapper>
+  <main
+    className="page"
+  />
+</Fragment>
+`;

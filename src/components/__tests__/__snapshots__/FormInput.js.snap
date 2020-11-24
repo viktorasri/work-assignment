@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormInput /> expect to render component 1`] = `
+<div
+  className="form__control"
+>
+  <input
+    className="form__input"
+    onChange={[MockFunction]}
+    placeholder="Form input"
+    type="text"
+    value="test"
+  />
+</div>
+`;

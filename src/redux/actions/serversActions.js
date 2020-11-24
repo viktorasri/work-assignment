@@ -6,10 +6,24 @@ import {
   SERVERS_LIST_SUCCESS,
 } from '../constants/serversConstants';
 
-//  Handle servers list request
+export const getServersListStart = () => ({
+  type: SERVERS_LIST_REQUEST,
+});
+
+export const getServersListSuccess = (payload) => ({
+  type: SERVERS_LIST_SUCCESS,
+  payload,
+});
+
+export const getServersListFail = (payload) => ({
+  type: SERVERS_LIST_FAIL,
+  payload,
+});
+
+//  Handle servers list API request
 export const getServersList = () => async (dispatch, getState) => {
   try {
-    dispatch({ type: SERVERS_LIST_REQUEST });
+    dispatch(getServersListStart());
 
     //  Get user infro from app state
     const {
@@ -26,12 +40,10 @@ export const getServersList = () => async (dispatch, getState) => {
 
     const { data } = await axios.get(`/servers`, config);
 
-    dispatch({ type: SERVERS_LIST_SUCCESS, payload: data });
+    dispatch(getServersListSuccess(data));
   } catch (error) {
-    dispatch({
-      type: SERVERS_LIST_FAIL,
-      payload: error.response && error.response.data.message ? error.response.data.message : error.message,
-    });
+    const errorMessage = error.response && error.response.data.message ? error.response.data.message : error.message;
+    dispatch(getServersListFail(errorMessage));
   }
 };
 

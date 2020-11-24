@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> expect to render component for not signed in user 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="header__inner"
+    >
+      <Link
+        to="/"
+      >
+        <img
+          alt="logo"
+          className="header__logo"
+          src="logo.svg"
+        />
+      </Link>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`<Header /> expect to render component for signed user 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="header__inner"
+    >
+      <Link
+        to="/"
+      >
+        <img
+          alt="logo"
+          className="header__logo"
+          src="logo.svg"
+        />
+      </Link>
+      <Button
+        onClick={[Function]}
+        variant="secondary"
+      >
+        Logout
+      </Button>
+    </div>
+  </div>
+</header>
+`;

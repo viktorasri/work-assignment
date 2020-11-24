@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page <Login /> expect to render component for not signed in user 1`] = `
+<Page
+  description="Server explorer web app"
+  title="Login"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="login block-center"
+    >
+      <div
+        className="login__heading"
+      >
+        <h1>
+          Log in
+        </h1>
+      </div>
+      <form
+        className="form"
+        onSubmit={[Function]}
+      >
+        <FormInput
+          id="username"
+          onChange={[Function]}
+          placeholder="Enter Username"
+          required={true}
+          type="text"
+          value=""
+        />
+        <FormInput
+          id="password"
+          onChange={[Function]}
+          placeholder="Enter Password"
+          required={true}
+          type="password"
+          value=""
+        />
+        <div
+          className="form__control d-flex justify-center"
+        >
+          <Button
+            id="login-btn"
+            type="submit"
+            variant="primary"
+          >
+            Login
+          </Button>
+        </div>
+      </form>
+    </div>
+  </div>
+</Page>
+`;

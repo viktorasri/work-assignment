@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> expect to render component 1`] = `
+<button
+  className="button button--primary"
+>
+  button
+</button>
+`;
+
+exports[`<Button /> expect to render without variant 1`] = `
+<button
+  className="button "
+>
+  button
+</button>
+`;

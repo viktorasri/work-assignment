@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page <NotFound /> expect to render component 1`] = `
+<Page
+  description="Server explorer web app"
+  title="404 Not Found"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="not-found block-center text-center"
+    >
+      <div
+        className="not-found__sub-heading"
+      >
+        <h2>
+          Error 404
+        </h2>
+      </div>
+      <div
+        className="not-found__heading"
+      >
+        <h1>
+          Oops! Something went wrong.
+        </h1>
+      </div>
+      <div
+        className="d-flex justify-center"
+      >
+        <Link
+          to="/"
+        >
+          <Button
+            variant="primary"
+          >
+            Back to Homepage
+          </Button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</Page>
+`;

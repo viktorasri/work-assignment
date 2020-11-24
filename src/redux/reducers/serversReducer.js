@@ -25,7 +25,7 @@ export const serversListReducer = (state = { loading: true }, action) => {
         servers: action.payload,
       };
     case SERVERS_LIST_RESET:
-      return { loading: null };
+      return { loading: true };
     default:
       return state;
   }
